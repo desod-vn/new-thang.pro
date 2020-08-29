@@ -1,0 +1,23 @@
+/******
+Name: Size
+-- Author: Thang Vuong
+-- Date: 14/08/2020
+-- Modified: Thang Vuong - 23/08/2020
+******/
+.size-w-full{width: 80%;}
+.size-full{width: 100%; height: 100%;}
+.size-apart{width: 100%; height: 50%;}
+.size-square{width: 50%; height: 50%;}
+
+.size-text-18{font-size: 18px;}
+.size-text-20{font-size: 20px;}
+.size-text-24{font-size: 24px;}
+.size-text-28{font-size: 28px;}
+.size-text-30{font-size: 30px;}
+.size-text-32{font-size: 32px;}
+.size-text-35{font-size: 35px;}
+.size-text-40{font-size: 40px;}
+.size-text-48{font-size: 48px;}
+.size-text-52{font-size: 52px;}
+.size-text-60{font-size: 60px;}
+.size-text-64{font-size: 64px;}
