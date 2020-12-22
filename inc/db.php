@@ -1,8 +1,8 @@
 <?php
-	$server = 'localhost';
-	$username = 'root';
-	$password = '';
-	$database = 'shorten_link';
+	$server = 'sql206.byethost7.com';
+	$username = 'b7_25257712';
+	$password = 'chelsea1st';
+	$database = 'b7_25257712_main';
 
 	$connect = mysqli_connect($server, $username, $password, $database);
 

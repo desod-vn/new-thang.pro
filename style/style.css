@@ -1,112 +1,183 @@
-@import 'parts/layout.css';
-@import 'parts/font.css';
-@import 'parts/text.css';
-@import 'parts/color.css';
-@import 'parts/size.css';
-@import 'parts/panel.css';
-@import 'parts/space.css';
-@import 'parts/place.css';
-@import 'parts/form.css';
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-
-.item-pr{
-    color: black;
-    border: 1px solid rgb(158, 142, 142);
-    padding: 0px;
-    margin: 20px 0px;
-    box-shadow: 0px 0px 10px black;
-    height: max-content;
-    position: relative;
+header {
+	width: 100%;
+	min-height: 100%;
+	background-image: url('img/head.png');
+	background-size: cover;
+	background-color: #87CEFA;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
-.item-pr > .img{
-    max-width: 100%;
-    height: auto;
+a{
+    color: white;
+    text-decoration: none;
 }
-.item-pr:hover{
-    border: none;
-    background-color: #ddd;
-    box-shadow: 10px 10px 15px black;
+.logo
+{
+    font-size: 2.25rem;
+    padding: 10px;
+    font-family: Impact, Charcoal, sans-serif;
+    color: chocolate;
+    text-decoration: none;
+    text-shadow: 3px 2px 2px black;
 }
-
-.item-title {
-    padding: 3px;
-    font-size: 25px;
+.logo .first
+{
+    color: green;
+}
+.logo .second
+{
+    color: gray;
+}
+.banner
+{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
     text-align: center;
-    padding: 15px;
-    text-transform: capitalize;
 }
-.more-pr {
-    background-color: teal;
+#link-in, #link-out{
+    background-color: #dddddd!important;
+    border: none!important;
+    outline: none!important;
+    margin: 10px 0!important;
+    background-image: url('img/link.png')!important;
+    background-repeat: no-repeat!important;
+    background-position: 10px 10px!important;
+    padding: 15px 0px 15px 55px!important;
+    box-sizing: border-box!important;
+    font-size: 1.5rem!important;
+    text-decoration: none!important;
+    width: fill;
+    border-radius: 0!important;
+}
+#link-in:focus
+{
+    border-bottom: 1px solid blue!important;
+    transition: all 0.5s!important;
+}
+#link-press, #link-copy {
+    background-color: #415a77!important;
+    color: white!important;
+    width: auto;
+    box-sizing: border-box!important;
+    font-size: 1.5rem!important;
+    padding: 1rem 2rem!important;
+    border-radius: 25px!important;
+    border: none!important;
+    outline: none!important;
+    cursor: pointer!important;
+}
+#link-press:hover {
+    background-color: #1b263b!important;
+}
+#link-form {
+	text-align: left;
+    border-radius: 5px;
+    background-color: #dddddd;
+    padding: 0.5rem 1rem;
+}
+.link-over {
+    width: 90%;
     display: inline-block;
+    padding: 10px 5px 10px 40px;
+    margin: 5%;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.vip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: -8px -7px;
+  background: url('img/vip.png');
+  width: 50px;
+  height: 51px;
+  color: transparent;
+  display: inline;
+  user-select: none;
+  background-repeat: no-repeat;
+}
+#over-date{
+    background-image: url('img/date.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+#over-descript{
+    background-image: url('img/des.png');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+#over-password{
+    background-image: url('img/pass.png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+}
+#over-query{
+    background-image: url('img/query.png');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+.menu-icon{
+       display: none;
+    }
+@media (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+        float: right;
+        position: relative;
+    }
+    .menu-icon ul {
+        list-style-type: none;
+        display: none;
+        text-align: left;
+        position: absolute;
+        background: black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 10px 15px;
+        top: 1;
+        right: 0;
+        z-index: 1;
+    }
+    .menu-icon ul li{
+        margin: 5px 0;
+    }
+    .menu-icon:hover ul{
+        display: block;
+        
+    }
+}
+table {
+      border-collapse: collapse;
+}
+td {
+  border: 1px solid #000;
+  background-color: #fff;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+    background: black;
+    color: white;
     font-size: 20px;
     text-align: center;
-    color: white;
-    padding: 10px 20px;
-    margin: 1rem;
 }
-a.more-pr {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 25px;
-
+th:last-child {
+    background: #2191FB;
 }
-a.more-pr:hover {
-    background-color: rgb(1, 94, 94);
+td:last-child {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: #BCB8B1;
 }
-#item-show{
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-}
-
-#more-detail{
-    background-color: #191919;
-    margin: 0;
-    height: 100%;
-    text-align: center;
-    position: relative;
-}
-
-#more-detail > .name{
-    font-size: 35px;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    font-family: 'Anton', sans-serif;
-    text-transform: uppercase;
-    background-color: #4267b2;
-    border-bottom: 5px solid green;
-}
-#more-detail > a.down{
-    background-color: transparent;
-    border-radius: 25px;
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 15px;
-    border: 1px solid white;
-    margin: 1rem;
-}
-#more-detail > a.down:hover{
-    background-color: #CED0CE;
-    color: black;
-    animation: down 0.5s;
-    position: relative;
-}
-@keyframes down {
-    0%   {font-size: 40px;font-weight: 750;}
-    25%   {font-size: 37.5px;font-weight: 675;}
-    50%  {font-size: 35px;font-weight: 600;}
-    75%   {font-size: 32.5px;font-weight: 525;}
-    100% {font-size: 30px;font-weight: 450;}
 }
